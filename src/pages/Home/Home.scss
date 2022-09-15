@@ -1,0 +1,103 @@
+@import '../../sass_reuseable/variable.scss';
+
+.Home-container {
+    background-color: $secondary-color;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    @include breakpoint(md) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        overflow: hidden;
+        transition: all 1s ease;
+
+        &.active {
+            height: $navbarHeightExtended;
+        }
+    }
+
+    .img-container {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        height: 300px;
+        width: 420px;
+        position: relative;
+        background-color: $primary-color;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+
+        @include breakpoint(md) {
+            height: 200px;
+            width: 300px;
+        }
+
+        img {
+            height: 298px;
+            width: 418px;
+            border-top-right-radius: 12px;
+            border-top-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+
+            @include breakpoint(md) {
+                height: 200px;
+                width: 300px;
+            }
+
+        }
+    }
+
+    .details {
+        font-family: $primary-font;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        @include breakpoint(md) {
+            justify-content: center;
+            align-self: center;
+            gap: 0.7rem;
+
+        }
+
+        .name {
+            font-size: 30px;
+            color: $dark-color;
+        }
+
+        .typewriter {
+            span {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    .socials {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+
+
+        .social-links {
+            font-size: 1.7rem;
+            display: flex;
+            gap: 10px;
+
+
+            a {
+                cursor: pointer;
+                color: $dark-color;
+            }
+
+        }
+
+    }
+
+}

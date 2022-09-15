@@ -1,0 +1,18 @@
+@import '../../sass_reuseable/variable.scss';
+
+.About-container {
+    height: 100vh;
+    background-color: $secondary-color;
+    font-family: $primary-font;
+
+    .about {
+        display: flex;
+        align-items: center;
+
+        .line {
+            color: $dark-color;
+            height: 5px;
+            width: 50px;
+        }
+    }
+}
