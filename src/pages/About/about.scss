@@ -2,17 +2,19 @@
 
 .About-container {
     height: 100vh;
-    background-color: $secondary-color;
+    background-color: orange;
     font-family: $primary-font;
 
     .about {
+        padding-top: 100px;
+        background-color: red;
         display: flex;
         align-items: center;
 
         .line {
-            color: $dark-color;
+            background-color: $dark-color;
             height: 5px;
-            width: 50px;
+            width: 30px;
         }
     }
 }
