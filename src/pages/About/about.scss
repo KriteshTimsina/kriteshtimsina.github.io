@@ -1,6 +1,7 @@
 @import '../../sass_reuseable/variable.scss';
 
 .About-container {
+    display: none;
     height: 100vh;
     background-color: orange;
     font-family: $primary-font;

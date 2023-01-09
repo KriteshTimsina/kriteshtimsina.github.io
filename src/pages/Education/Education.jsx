@@ -2,7 +2,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div className='container education collapse'>Education</div>
+    <div style={{ display: "none" }} className='container education collapse'>Education</div>
   )
 }
 

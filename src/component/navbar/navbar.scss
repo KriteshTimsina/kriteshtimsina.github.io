@@ -2,8 +2,9 @@
 
 #navbar {
     display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     width: 100vw;
+    box-shadow: rgba(154, 46, 46, 0.24) 0px 3px 8px;
     justify-content: space-around;
     align-items: center;
     font-family: $primary-font;
@@ -64,6 +65,7 @@
             display: flex;
             gap: 1.5rem;
             // align-items: center;
+            visibility: hidden;
 
             @include breakpoint(md) {
 
