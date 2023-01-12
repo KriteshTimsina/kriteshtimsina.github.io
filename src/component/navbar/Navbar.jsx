@@ -35,9 +35,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* responsive hamburger  */}
-            {/* <div className="hamburger" onClick={() => setIsClicked(!isClicked)}>
-                {isClicked ? <ImCross /> : <GiHamburgerMenu />}
-            </div> */}
+
 
 
         </nav>
