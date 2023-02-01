@@ -1,5 +1,8 @@
 /* CSS */
 .button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     appearance: button;
     background-color: #000;
     background-image: none;
@@ -9,7 +12,7 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    /* display: inline-block; */
     font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -43,6 +46,11 @@
 .button:not([disabled]):active {
     box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
+}
+.icon{
+    width:27px;
+    /* background-color:green; */
+    color:white;
 }
 
 @media (min-width: 768px) {

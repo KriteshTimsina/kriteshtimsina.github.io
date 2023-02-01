@@ -1,21 +1,79 @@
 @import '../../sass_reuseable/variable.scss';
 
 .About-container {
-    display: none;
     height: 100vh;
-    background-color: orange;
+    background-color: $secondary-color;
     font-family: $primary-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+    gap: 3rem;
 
-    .about {
-        padding-top: 100px;
-        background-color: red;
-        display: flex;
+    @include breakpoint(md) {
+        flex-direction: column;
         align-items: center;
-
-        .line {
-            background-color: $dark-color;
-            height: 5px;
-            width: 30px;
-        }
+        gap: 1rem;
+        overflow: hidden;
+        transition: all 1s ease;
     }
+
+    .about-description {
+        height: 65%;
+
+        @include breakpoint(md) {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            opacity: 80%;
+            margin-bottom: 0.3rem;
+        }
+
+        .name {
+            opacity: 70%;
+            font-weight: 900;
+            font-family: $primary-font;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            line-height:1.4rem;
+            opacity: 80%;
+            margin-bottom:1rem;
+
+            @include breakpoint(md) {
+                text-align: start;
+                max-width: 500px;
+                margin-bottom:0.5rem;
+                line-height:1rem;
+            }
+        }
+        .cta-link{
+            width:50%;
+            text-decoration:none;
+            display:flex;
+            
+        }
+
+    }
+
+    .about-image {
+        img {
+            object-fit: cover;
+            border-radius: 7px;
+            width: 380px;
+            height: 430px;
+        }
+
+        @include breakpoint(md) {}
+    }
+
 }

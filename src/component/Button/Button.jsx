@@ -1,9 +1,10 @@
 import React from 'react'
 import './button.css'
-const Button = (prop) => {
+const Button = (props) => {
   return (
     <button className='button'>
-        {prop.value}
+        <p>{props.value} &nbsp;</p>
+        <img className="icon" src={props.icon} alt="icon" />
     </button>
   )
 }

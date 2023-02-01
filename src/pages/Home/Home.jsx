@@ -21,7 +21,7 @@ const Home = ({ theme }) => {
           opacity: [0, 0.3, 0.5, 0.7, 1],
         }}
         className='img-container'  >
-        <img alt='Kritesh Timsina' src='hero.JPG' />
+        <img alt='Kritesh Timsina' src='https://kriteshtimsina.github.io/Hero.jpg' />
       </motion.div>
       <motion.div
         animate={{
@@ -31,7 +31,7 @@ const Home = ({ theme }) => {
         className='details'>
 
         <Greetings />
-        <h2 className='name'> I'm Kritesh Timsina</h2>
+        <h2 className='name'> I'm Kritesh Timsina </h2>
         <div className='typewriter'>
           <Typewriter
             options={
@@ -46,11 +46,9 @@ const Home = ({ theme }) => {
         <a
           target="_top"
           className='cta-getintouch'
-          href="mailto:kritshtimsina55@gmail.com?&subject=FPW" >
-          <Button value="Get In Touch" />
+          href="mailto:kriteshtimsina55@gmail.com?&subject=FPW" >
+          <Button value="Say Hi!" icon="emailme.gif"  />
         </a>
-
-
         <div className='socials'>
           <p>Find me on: </p>
           <div className='social-links'>
