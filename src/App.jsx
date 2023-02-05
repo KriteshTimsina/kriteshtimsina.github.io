@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Navbar from './component/navbar/Navbar'
 import './App.scss';
-import Error from './pages/Error';
+
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Education from './pages/Education/Education';

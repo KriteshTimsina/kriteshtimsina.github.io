@@ -8,10 +8,9 @@ import Button from '../../component/Button/Button';
 import { Greetings } from '../../component/Greet/Greetings';
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import { useNavigate } from 'react-router-dom';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
-const Home = ({ theme }) => {
+const Home = () => {
 
 
   return (
@@ -60,7 +59,7 @@ const Home = ({ theme }) => {
         </div>
       </motion.div>
 
-      <Link to="about" spy={true} smooth={true}  className='next-page'>
+      <Link to="about" spy={true} smooth={true} className='next-page'>
         <BsArrowDown />
       </Link>
     </div>

@@ -3,13 +3,15 @@ import './navbar.scss';
 import navLinks from '../../data/navbar_data/Navlinks';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCross } from 'react-icons/im';
-import { MdDarkMode } from 'react-icons/md';
-import { MdOutlineDarkMode } from 'react-icons/md';
-import { Link, animateScroll as scroll } from 'react-scroll';
+// import { MdDarkMode } from 'react-icons/md';
+// import { MdOutlineDarkMode } from 'react-icons/md';
+
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
     const [isClicked, setIsClicked] = useState(false);
+
     return (
         <nav id='navbar' className={`${isClicked ? "active" : ""}`}>
 
@@ -23,11 +25,7 @@ const Navbar = () => {
                     {
                         navLinks.map(({ id, title, link }) => {
                             return (
-
-                                <div key={id} className="link-hovered" style={{ cursor: "pointer" }} >
-                                    <Link onClick={() => setIsClicked(!isClicked)} to={link} spy={true} smooth={true} >{title}</Link>
-                                </div>
-
+                                <Link className="link-hovered " key={id} onClick={() => setIsClicked(!isClicked)} to={link} spy={true} smooth={true} >{title}</Link>
                             )
                         })
                     }
