@@ -77,7 +77,11 @@
             }
         }
     }
-    
+
+    .cta-getintouch {
+        text-decoration: none;
+    }
+
     .socials {
         margin-top: 1rem;
         display: flex;
@@ -97,6 +101,20 @@
 
         }
 
+    }
+
+    .next-page {
+        position: absolute;
+        bottom: 1rem;
+        right:5%;
+        border:none;
+        font-size:2rem;
+        background-color:$secondary-color;
+        cursor:pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .next-page:hover{
+        color:$primary-color;
     }
 
 }

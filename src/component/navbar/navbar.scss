@@ -15,7 +15,7 @@
     right: 0;
     left: 0;
     z-index: 1;
-    background-color: $light-color ;
+    background-color: $dark-color ;
 
     @include breakpoint(md) {
         align-items: flex-start;
@@ -50,8 +50,10 @@
         }
 
         .nav-left {
+            
+            cursor:pointer;
             h1 {
-
+                color: $light-color;
                 text-transform: uppercase;
                 font-weight: 700;
 
@@ -62,6 +64,7 @@
         }
 
         .nav-right {
+            
             display: flex;
             gap: 1.5rem;
             align-items: center;
@@ -75,7 +78,7 @@
             }
 
             a {
-
+                color: $light-color;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 font-weight: 600;

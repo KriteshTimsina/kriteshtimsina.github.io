@@ -14,21 +14,21 @@ const navLinks = [
         id: 3,
         title: "Education",
         link: "education"
-    },
-    {
-        id: 4,
-        title: "Skills",
-        link: "skills"
-    },
-    {
-        id: 5,
-        title: "Projects",
-        link: "projects"
-    },
-    {
-        id: 6,
-        title: "Contacts",
-        link: "contacts"
-    },
+     },
+    // {
+    //     id: 4,
+    //     title: "Skills",
+    //     link: "skills"
+    // },
+    // {
+    //     id: 5,
+    //     title: "Projects",
+    //     link: "projects"
+    // },
+    // {
+    //     id: 6,
+    //     title: "Contacts",
+    //     link: "contacts"
+    // },
 ]
 export default navLinks;
